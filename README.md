@@ -88,4 +88,6 @@ Enter natural language queries such as:
 * The backend must be running and accessible from the device or emulator.
 * Ensure your local IP is reachable from the emulator or physical device.
 
+---
 
+Architecture and Approach can be found here : https://docs.google.com/document/d/1W60SNneXM8Dkd_KnyjIiCqf24luVggmKzlDjqrolKYk/edit?usp=sharing
