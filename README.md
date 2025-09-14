@@ -90,4 +90,8 @@ Enter natural language queries such as:
 
 ---
 
+
+https://github.com/user-attachments/assets/2c3d68b3-af1d-453c-bb97-13673f5eab14
+
+
 Architecture and Approach can be found here : https://docs.google.com/document/d/1W60SNneXM8Dkd_KnyjIiCqf24luVggmKzlDjqrolKYk/edit?usp=sharing
