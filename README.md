@@ -1,61 +1,91 @@
-AI Query Interface App
-=======================
 
-This project combines a FastAPI backend with a React Native frontend (Expo) to provide a natural language interface for querying structured data.
+# AI Query Interface App
+## FastAPI + React Native (Expo) Project
 
-Prerequisites
--------------
+This project combines a **FastAPI backend** with a **React Native frontend (Expo)** to provide a natural language interface for querying structured data.
+
+---
+
+## Prerequisites
+
 - Python 3.8+
 - Node.js and npm
-- Expo CLI (install via: npm install -g expo-cli)
+- Expo CLI (install via: `npm install -g expo-cli`)
 - Android emulator or physical device with USB debugging enabled
 
-1. Clone the Repository
------------------------
+---
+
+## Setup Instructions
+
+### 1. Clone the Repository
 Download or clone the project files to your local machine.
 
-2. Configure API Endpoint
--------------------------
-Update the IP address in api.ts to match your local machine’s IP
+---
 
-3. Set Up the Backend (FastAPI)
--------------------------------
-a. Create and activate a virtual environment:
+### 2. Configure API Endpoint
+Update the IP address in `api.ts` to match your local machine’s IP.
 
-  python -m venv venv
-  source venv/bin/activate  
-  
-   IMPORTANT: for  Windows use venv\Scripts\activate
+---
 
-b. Install dependencies:
+### 3. Set Up the Backend (FastAPI)
 
-  pip install -r requirements.txt
+- **Create and activate a virtual environment:**
 
-c. Start the FastAPI server:
+```bash
+python -m venv venv
+source venv/bin/activate
+````
 
-  python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+> **IMPORTANT (Windows users):**
+>
+> ```bash
+> venv\Scripts\activate
+> ```
 
-4. Set Up the Frontend (React Native)
--------------------------------------
-a. Start the Expo development server in a separate terminal:
+* **Install dependencies:**
 
-  npx expo start
+```bash
+pip install -r requirements.txt
+```
 
-b. When prompted:
-  - Press 'a' to launch on Android
-  - Press 'w' to open in your browser
+* **Start the FastAPI server:**
+
+```bash
+python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+---
+
+### 4. Set Up the Frontend (React Native)
+
+* **Start the Expo development server in a separate terminal:**
+
+```bash
+npx expo start
+```
+
+* **When prompted:**
+
+  * Press **`a`** to launch on Android
+  * Press **`w`** to open in your browser
 
 Ensure an Android emulator is running or a physical device is connected.
 
-5. Test the Application
------------------------
+---
+
+### 5. Test the Application
+
 Enter natural language queries such as:
 
-  - Who is the top customer?
-  - What is the top item?
-  - Show items under $5
+* `Who is the top customer?`
+* `What is the top item?`
+* `Show items under $5`
 
-Notes
------
-- The backend must be running and accessible from the device or emulator.
-- Ensure your local IP is reachable from the emulator or physical device.
+---
+
+## Notes
+
+* The backend must be running and accessible from the device or emulator.
+* Ensure your local IP is reachable from the emulator or physical device.
+
+
