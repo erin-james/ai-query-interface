@@ -92,8 +92,7 @@ Enter natural language queries such as:
 
 
 
-
-https://github.com/user-attachments/assets/22dd5e82-d455-46b4-b10b-9336a265ec2a
+https://github.com/user-attachments/assets/6f5d102f-61e4-4dbf-89cb-93e92a8911ae
 
 
 
