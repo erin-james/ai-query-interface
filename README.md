@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+AI Query Interface App
+=======================
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project combines a FastAPI backend with a React Native frontend (Expo) to provide a natural language interface for querying structured data.
 
-## Get started
+Prerequisites
+-------------
+- Python 3.8+
+- Node.js and npm
+- Expo CLI (install via: npm install -g expo-cli)
+- Android emulator or physical device with USB debugging enabled
 
-1. Install dependencies
+1. Clone the Repository
+-----------------------
+Download or clone the project files to your local machine.
 
-   ```bash
-   npm install
-   ```
+2. Configure API Endpoint
+-------------------------
+Update the IP address in api.ts to match your local machine’s IP
 
-2. Start the app
+3. Set Up the Backend (FastAPI)
+-------------------------------
+a. Create and activate a virtual environment:
 
-   ```bash
-   npx expo start
-   ```
+  python -m venv venv
+  source venv/bin/activate  
+  
+   IMPORTANT: for  Windows use venv\Scripts\activate
 
-In the output, you'll find options to open the app in a
+b. Install dependencies:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+  pip install -r requirements.txt
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+c. Start the FastAPI server:
 
-## Get a fresh project
+  python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
-When you're ready, run:
+4. Set Up the Frontend (React Native)
+-------------------------------------
+a. Start the Expo development server in a separate terminal:
 
-```bash
-npm run reset-project
-```
+  npx expo start
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+b. When prompted:
+  - Press 'a' to launch on Android
+  - Press 'w' to open in your browser
 
-## Learn more
+Ensure an Android emulator is running or a physical device is connected.
 
-To learn more about developing your project with Expo, look at the following resources:
+5. Test the Application
+-----------------------
+Enter natural language queries such as:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+  - Who is the top customer?
+  - What is the top item?
+  - Show items under $5
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Notes
+-----
+- The backend must be running and accessible from the device or emulator.
+- Ensure your local IP is reachable from the emulator or physical device.
