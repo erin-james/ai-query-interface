@@ -1,5 +1,5 @@
 
-# AI Query Interface App
+# AI Query Interface App - Made by Erin James
 ## FastAPI + React Native (Expo) Project
 
 This project combines a **FastAPI backend** with a **React Native frontend (Expo)** to provide a natural language interface for querying structured data.
